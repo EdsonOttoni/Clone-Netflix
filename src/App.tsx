@@ -11,7 +11,7 @@ const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle/>
-      <DashBoard/>
+      <Browser/>
     </ThemeProvider>
   );
 }
