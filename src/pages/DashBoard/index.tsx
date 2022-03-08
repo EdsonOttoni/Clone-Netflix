@@ -14,7 +14,7 @@ const DashBoard= () => {
   return (
     <Container>
       <HeaderDashBoard>
-        <LogoText>Netflix Clone</LogoText>
+        <LogoText>Cl-Netflix</LogoText>
       </HeaderDashBoard>
       <Wrapper>
         <TextDashboard>Quem está assistindo?</TextDashboard>
