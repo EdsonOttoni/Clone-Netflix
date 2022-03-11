@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Header = styled.div`
   position: fixed;
@@ -16,7 +17,7 @@ export const Header = styled.div`
   transition: all ease 0.3s;
 `
 
-export const NetflixTitleWrapper = styled.a`
+export const NetflixTitleWrapper = styled(Link)`
   color: #e50914;
 `
 

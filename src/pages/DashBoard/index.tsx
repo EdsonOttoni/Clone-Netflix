@@ -18,11 +18,13 @@ const DashBoard= () => {
       </HeaderDashBoard>
       <Wrapper>
         <TextDashboard>Quem está assistindo?</TextDashboard>
+
         <UserContainerDashboard/>
     
         <BtnToEditProfile>
           Gerenciar perfis
         </BtnToEditProfile>
+        
       </Wrapper>
     </Container>
   )

@@ -9,17 +9,18 @@ import {
   ProfileLink,
   Profile,
   ProfileContent,
-  ProfileName
+  ProfileName,
+  Add
 } from './styled'
 
 const UserContainerDashboard = () => {
   return (
     <Container>
       <WrapperProfiles>
-        {/* lista */}
+
         <Profile>
           <ProfileContent>
-            <ProfileLink href="/">
+            <ProfileLink to="/browser">
               <AvatarWrapper>
                 <Avatar></Avatar>
               </AvatarWrapper>
@@ -28,18 +29,19 @@ const UserContainerDashboard = () => {
           </ProfileContent>
         </Profile>
 
-        {/* add */}
-
         <Profile>
           <ProfileContent>
-            <ProfileLink href="/">
+            <ProfileLink to='/'>
               <AvatarWrapper>
-                <Avatar></Avatar>
+                <Add>
+                  <AiOutlinePlusCircle size={200} />
+                </Add>
               </AvatarWrapper>
-              <ProfileName>Edson Ottoni</ProfileName>
+              <ProfileName>Adicionar um novo usuário</ProfileName>
             </ProfileLink>
           </ProfileContent>
         </Profile>
+
       </WrapperProfiles>
     </Container>
   )

@@ -71,7 +71,7 @@ const Browser = () => {
           }
         }
       >
-        <NetflixTitleWrapper href="/">
+        <NetflixTitleWrapper to="/">
           <NetflixTitle>Cl-Netflix</NetflixTitle>
         </NetflixTitleWrapper>
         <IconUserPerfil>

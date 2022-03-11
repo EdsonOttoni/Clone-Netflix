@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import ImageTheWitcher from '../../assets/the_witcher.svg'
 
@@ -34,7 +35,7 @@ export const ProfileContent = styled.div`
   justify-content: center;
 `
 
-export const ProfileLink = styled.a`
+export const ProfileLink = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,9 +73,40 @@ export const Avatar = styled.div`
   }
 
   &:hover&:after {
-      border: 5px solid #fff;
-      transition-duration: 0.3s;
-    }
+    border: 5px solid #fff;
+    transition-duration: 0.3s;
+  }
+`
+
+export const Add = styled.div`
+  width: ${WIDTH_AVATAR_PROFILE}px;
+  height: ${HEIGHT_AVATAR_PROFILE}px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color;
+
+  &:after {
+    content: '';
+    display: block;
+    border-radius: 8px;
+    border: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover&:after {
+    border: 5px solid #fff;
+    transition-duration: 0.3s;
+  }
 `
 
 export const ProfileName = styled.span`

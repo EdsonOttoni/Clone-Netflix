@@ -4,14 +4,13 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/global';
 import { darkTheme } from './themes/darkTheme';
 
-import DashBoard from './pages/DashBoard';
-import Browser from './pages/Browser';
+import Routes from './routes';
 
 const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle/>
-      <DashBoard/>
+      <Routes/>
     </ThemeProvider>
   );
 }
